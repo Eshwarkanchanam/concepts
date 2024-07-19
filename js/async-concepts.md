@@ -273,3 +273,19 @@ function updateWallet(orderSummary) {
 
 ``
 ```
+
+## Promise functions
+
+- **Promise.all(iterable)**
+  - makes all api calls parallel and wait for all of them to finish (incase all pronies are resolved)
+  - As soon as anyone of the promise is rejected it throws an error immediately it will not wait for other promises.
+- **Promise.allSettled(iterable)**
+  - Irrespective of success or failure it will wait for all the promises to be settled and gives array of object
+  - for resolved value object -> { status: 'fulfilled' , value : 'resolved value' }
+  - for reject value object -> { status : 'rejected' , reason : 'reason' }
+- **Promise.race(iterable)**
+    - returns result of first settled(either resolved or rejected) promise.
+- **Promise.any(iterable)** 
+  - wait for 1st success of promise to return the value.
+  - if all the promises are rejected then returns aggregate error which is array of all errors.
+  - To access array of errors use (err.errors)
