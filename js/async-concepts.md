@@ -289,3 +289,8 @@ function updateWallet(orderSummary) {
   - wait for 1st success of promise to return the value.
   - if all the promises are rejected then returns aggregate error which is array of all errors.
   - To access array of errors use (err.errors)
+
+## Reference Links
+ - [promises](https://www.youtube.com/watch?v=ap-6PPAuK1Y&t=488s)
+ - [event loop](https://www.youtube.com/watch?v=8zKuNo4ay8E)
+ - [Promise APIs](https://www.youtube.com/watch?v=DlTVt1rZjIo)
